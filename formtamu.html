@@ -238,6 +238,13 @@
             <input type="text" class="form-control" id="inputPriaWanita" value="Vita dan Jemi" disabled>
         </div>
     </div>
+
+        <!-- Tombol tutorial (tetap ada) -->
+        <div class="d-flex gap-2 mb-4">
+            <button id="tutorialButton" class="btn btn-success w-100">
+                <i class="bi bi-play-circle"></i> Tutorial
+            </button>
+        </div>
     
     <!-- Area Input Tamu Undangan dengan Multi Baris -->
     <div class="card">
@@ -260,12 +267,7 @@
     
     <div class="divider"></div>
     
-    <!-- Tombol tutorial (tetap ada) -->
-    <div class="d-flex gap-2 mb-4">
-        <button id="tutorialButton" class="btn btn-success w-100">
-            <i class="bi bi-play-circle"></i> Tutorial
-        </button>
-    </div>
+
 </div>
 
 <!-- Popup Tutorial -->
@@ -273,7 +275,7 @@
     <div class="popup-content">
         <h5>Cara Menggunakan Form Undangan</h5>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/WJZDdDWOW0g" 
+            <iframe src="https://www.youtube.com/embed/1BvXNlsPwFc" 
                     title="Tutorial" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -408,7 +410,7 @@ ${namaMempelai}`;
             copyBtn.addEventListener('click', function(e) {
                 e.stopPropagation();
                 const namaTamu = inputField.value.trim();
-                const namaMempelai = namaMempelaiInput.value.trim() || 'Vita dan Jemi'; // fallback
+                const namaMempelai = namaMempelaiInput.value.trim() || 'Anisa dan Arul'; // fallback
                 
                 if (!namaTamu) {
                     alert('Silakan isi nama tamu terlebih dahulu.');
@@ -485,5 +487,3 @@ ${namaMempelai}`;
 
 </body>
 </html>
-
-
