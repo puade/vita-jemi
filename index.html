@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vita & Jemy</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=DM Serif Text|cambria|Autour One|Bettrish|Merienda|Amita|Kumar One|Lobster|Redressed|Lavishly Yours|Sunshine|Rouge Script' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Open Graph meta tags untuk thumbnail dan deskripsi ketika link dibagikan -->
+  <meta property="og:title" content="Vita & Jemy">
+  <meta property="og:description" content="Undangan Pernikahan Digital Vita & Jemy.">
+  <meta property="og:image" content="https://puade.github.io/vita-jemy/thumbnail.jpg"> <!-- Gambar Thumbnail -->
+  <meta property="og:url" content="https://puade.github.io/vita-jemy/"> <!-- Ganti dengan URL kamu -->
+  <meta property="og:type" content="website">
+
+    <!-- Favicon untuk browser desktop -->
+    <link rel="icon" href="fav/favicon.ico" type="image/x-icon">
+  
+    <!-- Favicon untuk perangkat dengan resolusi tinggi -->
+    <link rel="icon" href="fav/favicon.png" type="image/png">
+    
+    <!-- Favicon untuk perangkat iOS (Apple Touch Icon) -->
+    <link rel="apple-touch-icon" href="fav/favicon-180x180.png">
+    
+    <!-- Favicon untuk perangkat Android dan layar beresolusi tinggi -->
+    <link rel="icon" sizes="192x192" href="fav/favicon-192x192.png">
+
+</head>
+<body>
+
+  <button id="music-control" class="tombolmusik hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#ffffff" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5m3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5"/>
+    </svg>
+  </button>
+
+  <!-- Frame Cover -->
+<div class="frame frame-cover" id="frame-cover">
+
+   <!-- Menambahkan GIF sebagai elemen terpisah -->
+
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNng4cTNwcHJ5bTYxZmg5ZzJhZDdlZm9rcTVneHdwb3R2dHB4emV0diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wR77d4zcNpkJZv9HV1/giphy.gif" alt="Background GIF" class="gif-background">
+  
+  <div>
+      <h4 class="transisi transisi-atas" style="font-family: Redressed; font-size: 24px; color: #222222; padding-top: 80px; ">the Wedding of</h4>
+      <h1 class="transisi transisi-kanan" style="font-family: Lobster; font-size: 5vh; color: #936932; ">
+       Vita <span style="font-size: 3vh;">&</span> Jemi</h1>
+      <p class="transisi transisi-bawah" style="font-family: Redressed; font-size: 18px; color: #222222;">Sabtu, 04 April 2026</p>
+  </div>
+  
+  <div class="tombolcover">
+      <div class="transisi transisi-bawah" style="font-size: 12px;  color: #222222;">Kepada Yth</div>
+      <h1 id="recipient-name" class="transisi transisi-bawah" style="background-color: rgba(255, 255, 255, 0,5); border-radius: 3vh; padding-top: -5px;  margin-bottom: -10px; font-size: 16px;  color: #936932;"></h1>
+      <button id="open-music-btn" class="btn btn-dark mt-3 transisi transisi-atas" onclick="showFrame1()"><i class="fas fa-envelope-open" style="font-size: 14px; margin-right: 8px;"> </i> Buka Undangan</button>
+      <p><p>
+      <h5 style="font-size: 10px; color:#222222; margin-bottom:40px;">Mohon maaf bila salah penulisan nama/gelar</h5>
+      <p></p>
+  </div>
+</div>
+
+
+  <!-- Frame 2a -->
+  <div class="frame frame-2a" id="frame-2"> 
+    <div style="font-family: Montserrat; color: #222222; 
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 30px" >
+      <h3 class="transisi transisi-atas" style="font-size: 12px; padding-top: 20px; line-height: 2;">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”</h3>
+      <p class="transisi transisi-bawah" style="font-size: 14px;"><b>- Q.S. Ar-Rum : 21 -</b></p>
+    </div>
+  </div>
+  
+
+  <!-- Frame 3 -->
+  <div class="frame frame-3" id="frame-3">
+    <div>
+      <div class="transisi transisi-atas">
+          <h5><b>Assalamu'alaikum Warahmatullahi Wabarakatuh</b></h5><br/>
+          <h5>Dengan memohon Ridho serta Rahmat Allah <i>Subhanahu Wa Ta'ala</i>, kami bermaksud menyelenggarakan Resepsi Pernikahan kami:</h5><br/>
+      </div>
+      <img class="transisi transisi-kanan" src="img/wanita-1b.png" alt="Bride" style="width: 50% ;">
+      <br><br>
+          <p class="transisi transisi-kanan" style="font-family: Lobster; font-size: 30px; color: #936932;
+          background: rgba(255, 255, 255, 0.3);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          display: inline-block;
+          padding: 1px 10px;
+          border-radius: 30px">Nurvitrawati Massa, S.Pd</p>
+          <p class="transisi transisi-atas" style="font-size: 14px;">Anak Pertama dari :<br/> <b>BAPAK (ALM.) SUHARDI MASSA & IBU HJ. LISNAWATI PAKAYA, S.Pd</b></p>
+          
+          <p style="font-family: Lobster; font-size: 5vh; padding-top: 20px;">&</p>
+          <img class="transisi transisi-kiri" src="img/pria-1b.png" alt="Groom" style="width: 50%; padding-top: 20px;"> <br><br>
+              <p class="transisi transisi-kanan" style="font-family: Lobster; font-size: 30px; color: #936932; background: rgba(255, 255, 255, 0.3);
+              backdrop-filter: blur(8px);
+              -webkit-backdrop-filter: blur(8px);
+              display: inline-block;
+              padding: 1px 10px;
+              border-radius: 30px">Jemi Akuba, S.E</p>
+              <p class="transisi transisi-atas" style="font-size: 14px;">Anak Ketiga dari :<br/> <b>BAPAK RAHA AKUBA & IBU SARTIN NENTO</b></p>
+    </div>
+  </div>
+  
+
+
+  <!-- Frame 4 -->
+  <div class="frame frame-4" id="frame-4">
+    <div>
+      <h1 class="transisi transisi-bawah" style="font-family: Bettrish; font-size: 100px; ">Acara</h1>
+      <div id="countdown" class="countdown transisi transisi-atas"></div>
+      <div class="event">
+        <h4 class="transisi transisi-kanan" style="font-family: Redressed; margin-bottom: 30px;">Resepsi</h4>
+        <p class="transisi transisi-kanan" style="font-size: 16px; text-align: left;"><i class="fa-regular fa-calendar-days"></i> Sabtu, 04 April 2026</p>
+        <p class="transisi transisi-kiri" style="font-size: 16px; text-align: left;"><i class="fa-regular fa-clock"></i> Pukul 09.30 WITA</p>
+        <p class="transisi transisi-bawah" style="text-align: left;"><i class="fa-solid fa-location-dot"></i><b> GRAND SUMBER RIA BALLROOM</b></p>
+        <p class="transisi transisi-atas" style="font-size: 14px; text-align: left;">Jl. Pangeran Hidayat III No.3, Wongkaditi Barat Kec. Kota Utara, Kota Gorontalo, 96128</p>
+        <a href="https://maps.app.goo.gl/cqeHa9msG3PuFEKv6" target="_blank" class="btn btn btn-dark mt-3 btn-block">Buka Google Maps</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Frame 7
+  <div class="frame frame-7" id="frame-7">
+    <h1 class="transisi transisi-bawah" style="font-family: Bettrish; font-size: 100px; ">Gift</h1>
+    <p class="transisi transisi-atas" style="font-size: 12px; ">Kehadiran Anda merupakah hadiah terbaik yang bisa kami harapkan. Namun jika Anda bermaksud untuk mengirimkan hadiah pernikahan lain, silahkan klik tombol salin untuk menyalin nomor rekening</p>
+
+    <div class="gift-card transisi transisi-kiri">
+      <div class="gift-card-logo-bri">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1024px-Bank_Central_Asia.svg.png" alt="Bank BCA" style="width:70px;">
+      </div>
+      <p>Fadly Polihito</p>
+      <h3>7975538796</h3>
+      <button class="btn btn btn-dark mt-3 btn-block" onclick="copyToClipboard('7975538796')">Salin Nomor</button>
+    </div>
+
+    <div class="gift-card transisi transisi-kanan">
+      <div class="gift-card-logo-bri">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/BRI_2025.png/960px-BRI_2025.png" alt="Bank BCA" style="width:60px;">
+      </div>
+      <p>Marcelia Kadir</p>
+      <h3>512701028238533</h3>
+      <button class="btn btn btn-dark mt-3 btn-block" onclick="copyToClipboard('512701028238533')">Salin Nomor</button>
+    </div>
+  </div>
+   -->
+
+  <!-- Frame 5
+  <div class="frame frame-5" id="frame-5">
+    <h1 class="transisi transisi-bawah" style="font-family: Bettrish; color: #ffffff; margin-bottom: 100px;">
+      <span style="font-size: 70px; font-family: 'Times New Roman', Times, serif; margin-left:-50px; color: #caa732; letter-spacing: -5px;" >Moment</span>  
+      <span style="font-size: 80px; padding-top: 50px;position: absolute; margin-left: -70px; color: #ffffff;  ">Gallery</span>  
+    </h1>    
+    <div class="moment">
+        <div class="foto lebar" onclick="showImage(0)"><img src="img/1.jpg"></div>
+        <div class="foto panjang" onclick="showImage(1)"><img src="img/2.jpg"></div>
+        <div class="foto large" onclick="showImage(2)"><img src="img/3.jpg"></div>
+        <div class="foto lebar" onclick="showImage(6)"><img src="img/7.jpg"></div>
+        <div class="foto panjang" onclick="showImage(7)"><img src="img/8.jpg"></div>
+        <div class="foto large" onclick="showImage(8)"><img src="img/9.jpg"></div>
+        <div class="foto lebar" onclick="showImage(3)"><img src="img/4.jpg"></div>
+        <div class="foto panjang" onclick="showImage(4)"><img src="img/5.jpg"></div>
+        <div class="foto large" onclick="showImage(5)"><img src="img/6.jpg"></div>
+    </div>
+  </div>
+ -->
+  <!-- Modal -->
+  <div id="modal" class="modal">
+      <div class="modal-header">
+          <span class="close" onclick="closeModal()">&times;</span>
+      </div>
+      <div class="modal-content">
+          <img id="modal-image" src="" alt="Modal Image">
+      </div>
+      <div class="modal-footer">
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+  </div>
+  
+
+  <!-- Frame 6 -->
+  <div class="frame frame-6" id="frame-6">
+    <h1 class="transisi transisi-bawah" style="font-family: Bettrish;">
+      <span style="font-size: 70px; font-family: 'Times New Roman', Times, serif; margin-left:-70px; color: #936932;" >Doa</span>  
+      <span style="font-size: 80px; padding-top: 50px;position: absolute; margin-left: -70px; color: #222222; ">Ucapan</span>  
+    </h1>
+
+    <div id="spinner" class="spinner" style="display:none;">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+    </div>
+    
+    <form id="formPernikahan" class="ucapan-section" style="font-size: 14px; text-align: left; color: #222222; padding-top: 70px;">
+      <div class="form-group transisi transisi-kiri">
+        <label for="nama" >Nama:</label>
+        <input type="text" class="form-control" id="nama" name="nama" required>
+      </div>
+      <div class="form-group transisi transisi-kiri">
+        <label for="kehadiran">Konfirmasi Kehadiran:</label>
+        <select class="form-control" id="kehadiran" required>
+          <option value="Hadir">Hadir</option>
+          <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+      </div>
+      <div class="form-group transisi transisi-kiri">
+        <label for="pesan">Kirim Doa & Ucapan:</label>
+        <textarea class="form-control" id="pesan" name="pesan" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark btn-block">Kirim</button>
+    </form>
+    <div class="ucapan-container" id="ucapan"></div>
+    <div id="respon" ></div> <!-- Untuk menampilkan status respon -->
+    
+  </div>
+
+  <!-- Frame 2 -->
+  <div class="frame frame-2" id="frame-2">  
+
+    
+     
+    <br class="transisi transisi-atas"><u>Keluarga yang berbahagia:</u>
+    <p>
+    <div class="transisi transisi-bawah"><u>PIHAK WANITA :</u></div>
+    <div class="transisi transisi-kiri"><b>KELUARGA MASSA - YUNUS</b></div>
+    <div class="transisi transisi-kanan"><b>KELUARGA PAKAYA - JASSIN</b></div>
+
+    <p>
+    <div class="transisi transisi-bawah"><u>PIHAK PRIA :</u></div>
+    <div class="transisi transisi-kiri"><b>KELUARGA AKUBA - KARIM</b></div>
+    <div class="transisi transisi-kanan"><b>KELUARGA NENTO - HADJARATI</b></div>
+    
+    <hr style="padding-top: 20px;"></hr>
+
+    <p class="transisi transisi-bawah"><i>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami. Atas kehadiran dan doa restunya, kami ucapkan terima kasih.</i></p>
+
+    <h1 class="transisi transisi-bawah" style="font-family: Bettrish; color: #ffffff; margin-top: 10px;">
+      <span style="font-size: 50px; font-family: Redressed; margin-left:-30px; color: #936932;" >Vita</span>  
+      <span style="font-size: 60px; padding-top: 30px;position: absolute; margin-left: -50px; color: #222222; ">Jemi</span>  
+    </h1>
+ 
+  <footer style="padding-top: 5px; padding-bottom: 5px; font-size: 12px;">
+    <a href="https://wa.me/+6289609745090?text=Hai%20Admin,%20Saya%20ingin%20pesan%20Undangan%20Digital" style="color: #e1f2ff;">
+    <img src="https://img.icons8.com/?size=20&id=uZWiLUyryScN&format=png&color=000000" />
+      Pesan Undangan Digital di <b>Puade</b>
+    </a>
+  </footer>
+
+
+    <audio id="background-music" src="backsound.mp3" loop></audio>
+
+  </div>
+
+  <script src="script.js"></script>
+  
+  
+</body>
+</html>
+
+
+
+
